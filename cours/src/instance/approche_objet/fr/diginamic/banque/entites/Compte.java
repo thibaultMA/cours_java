@@ -8,4 +8,11 @@ public class Compte {
         this.id = id;
         this.solde = solde;
     }
+    public String toString() {
+        return "Compte : { " +
+                "id=" + id +
+                ", solde=" + solde +
+                '}';
+    }
+
 }
