@@ -3,6 +3,7 @@ package instance.approche_objet.fr.diginamic.banque.entites;
 public class Compte {
    private int id;
     private int solde;
+    private int nombreOperation = 0;
 
     public Compte(int id, int solde) {
         setId(id);
@@ -11,13 +12,20 @@ public class Compte {
 
     @Override
     public String toString() {
-        return "Compte : {\n " +
-                "id=" + getId() +
-                ",\n solde=" + getSolde() +
-                " \n }";
+        return "Numero : "+ getId() +
+                " – Nombre d’opérations : " + getNombreOperation() +
+                " – Solde "+getSolde();
     }
 
-    public int getId() {
+    public int getNombreOperation() {
+        return nombreOperation;
+    }
+
+    public void setNombreOperation() {
+        ++this.nombreOperation;
+    }
+
+    public Integer getId() {
         return id;
     }
 
@@ -32,4 +40,6 @@ public class Compte {
     public void setSolde(int solde) {
         this.solde = solde;
     }
+
+
 }

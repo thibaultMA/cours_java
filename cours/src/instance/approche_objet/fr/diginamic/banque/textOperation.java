@@ -8,7 +8,7 @@ public class textOperation {
 
     public static void main(String[] args) {
         Operation[] tabOp = new Operation[4];
-            tabOp[0]= new Debit("ezfef",1);
+            tabOp[0]= new Debit("",2163);
             tabOp[1]= new Credit("ezfef",3);
             tabOp[2]= new Debit("ezfef",2);
             tabOp[3]= new Credit("ezfef",1);

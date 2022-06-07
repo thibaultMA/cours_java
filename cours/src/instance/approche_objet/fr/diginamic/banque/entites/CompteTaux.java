@@ -13,12 +13,7 @@ public class CompteTaux extends Compte{
 
     @Override
     public String toString() {
-
-        return "CompteTaux{\n" +
-                "  id=" + this.getId() +
-                ",\n  solde=" + this.getSolde() +
-                ",\n  taux=" + taux +
-                "\n}";
+        return super.toString()+" - Taux : "+getTaux()+"%";
     }
 
     public int getTaux() {
